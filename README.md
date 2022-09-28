@@ -8,10 +8,9 @@ Requires [YOURLS](https://yourls.org) `1.9.1` and above.
 
 ## Installation
 
-1. In `/user/plugins`, create a new folder named `yourls-nolog`.
-2. Drop these files in that directory.
-3. Go to the Plugins administration page (eg. `http://sho.rt/admin/plugins.php`) and activate the plugin.
-4. Have fun!
+1. In `/user/plugins`, git clone https://github.com/Samuarcher/yourls-nolog.git.
+2. Go to the Plugins administration page (eg. `http://sho.rt/admin/plugins.php`) and activate the plugin.
+3. Have fun!
 
 ## License
 
