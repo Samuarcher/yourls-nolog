@@ -1,26 +1,20 @@
 <?php
 /*
-Plugin Name: Your Plugin Name
-Plugin URI: https://github.com/your_name/your_plugin
-Description: One line description of your plugin
+Plugin Name: yourls-nolog
+Plugin URI: https://github.com/Samuarcher/yourls-nolog
+Description: Yourls plugin so as not to log in IP and the user-agent 
 Version: 1.0
-Author: Your Name
-Author URI: https://your-site-if-any/
+Author: Samuarcher
 */
 
-// No direct call
-if( !defined( 'YOURLS_ABSPATH' ) ) die();
+yourls_add_filter( 'get_user_agent', 'nolog_user_agent' );
+yourls_add_filter( 'get_IP', 'nolog_IP' );
 
-/*
+function nolog_user_agent( $ua ) {
+    return "";
+}
 
- Your code goes here.
- 
- Suggested read:
- https://docs.yourls.org/guide/extend/plugins.html
- https://docs.yourls.org/development/plugins.html
- https://docs.yourls.org/development/coding-standards.html
- and in general the whole "Development" section on https://docs.yourls.org/
- 
- Have fun!
- 
-*/
+
+function nolog_IP( $ip ) {
+    return "";
+}
